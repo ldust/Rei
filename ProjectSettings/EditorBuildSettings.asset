@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TornadoBanditsStudio/Low Poly Free Pack/Demo Scenes/Palm_Tree_Scene.unity
+    guid: b03f28a049aa85043a15360c7cba19c2
