@@ -272,7 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d3a012528545aebd5ff69e23fce4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5.5
+  distance: 5.8
+  moveDamping: 5
   character: {fileID: 653825183}
 --- !u!1 &285295770
 GameObject:
@@ -576,12 +577,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 285295770}
-        m_MethodName: 
+      - m_Target: {fileID: 285295772}
+        m_MethodName: Test
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

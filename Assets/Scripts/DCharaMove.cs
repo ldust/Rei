@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DCharaMove : MonoBehaviour {
+    public float speed;
+    CharacterController _char;
 
-    CharacterController _charCtrl;
-
-	// Use this for initialization
 	void Start () {
-        _charCtrl = GetComponent<CharacterController>();
+        _char = GetComponent<CharacterController>();
+
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		
+        float dh = Input.GetAxis("Horizontal") * speed;
+        float dv = Input.GetAxis("Vertical") * speed;
+
+
 	}
 }

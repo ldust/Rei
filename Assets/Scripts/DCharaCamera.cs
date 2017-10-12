@@ -4,35 +4,15 @@ using UnityEngine;
 
 public class DCharaCamera : DBehaviour {
     public float distance;
-    public float moveDamping = 2.0f;
+    public float moveDamping;
     public GameObject character;
-
 
     Camera _camera;
     Vector3 faceTo;
     Vector3 _target;
 
     void _UpdateCamera(ViewDirection dir){
-        switch (dir) {
-            case ViewDirection.NegativeX:
-                faceTo = new Vector3(-1, 0, 0);
-                break;
-            case ViewDirection.NegativeY:
-                faceTo = new Vector3(0, -1, 0);
-                break;
-            case ViewDirection.NegativeZ:
-                faceTo = new Vector3(0, 0, -1);
-                break;
-            case ViewDirection.PositiveX:
-                faceTo = new Vector3(1, 0, 0);
-                break;
-            case ViewDirection.PositiveY:
-                faceTo = new Vector3(0, 1, 0);
-                break;
-            case ViewDirection.PositiveZ:
-                faceTo = new Vector3(0, 0, 1);
-                break;
-        }
+        faceTo = DGame.Instance.ViewVector;
         _UpdateTarget();
     }
 
